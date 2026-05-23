@@ -37,7 +37,7 @@ while True:
                 print("Nothing to delete")
             else:
                 print(all_expenses)
-                selection = int(input("Enter the position number of the expense you want to drop: "))
+                selection = int(input("Enter the position number of the expense you want to drop: "))-1
                 if 0<= selection <len(expenses_list):
                     cat_to_remove = selected_category.pop(selection)
                     expenses_list.pop(selection)
